@@ -1,6 +1,9 @@
 <?php
-    define('DB_HOST', 'localhost');
-    define('DB_USER', 'root');
-    define('DB_PASS', '');
-    define('DB_NAME', 'Mvc-2209b');
-    define('URLROOT', 'http://mvc-2209b.org');
+
+define("URLROOT", "http://php-toets-p4.nl/");
+define("APPROOT", dirname(dirname(__FILE__)));
+
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'ExamenOverzicht');

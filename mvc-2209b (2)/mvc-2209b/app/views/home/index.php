@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="<?= URLROOT; ?>/css/style.css">
+    <title>Home</title>
 </head>
+
 <body>
+
+    <header>
+        <a href="<?= URLROOT; ?>" class="logo">
+            <i class="ri-home-3-fill"></i>
+            <span>Younes</span>
+        </a>
+
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="<?= URLROOT; ?>/examen">Overzicht Afgenomen Examinatoren</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="#" class="user">
+                <i class="ri-user-fill"></i>
+                Sign In
+            </a>
+            <a href="#">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+
+
+
     <h3><?= $data['title']; ?></h3>
-    <a href="<?= URLROOT; ?>/country/index">Landen</a>
 
     <table border="1">
         <thead>
@@ -16,12 +43,14 @@
             <th>Naam</th>
         </thead>
         <tbody>
-    	    <tr>
+            <tr>
                 <td><?= $data['id']; ?></td>
                 <td><?= $data['name']; ?></td>
             </tr>
         </tbody>
     </table>
 
+    <script src="<?= URLROOT; ?>/js/nav.js"></script>
 </body>
+
 </html>
